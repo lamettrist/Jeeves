@@ -1,6 +1,6 @@
 "use client";
 import { useSession } from "./session";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function Show({when, children}: {when: 'signed-in' | 'signed-out', children: React.ReactNode}) {
     const session = useSession();

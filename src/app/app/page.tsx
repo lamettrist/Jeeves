@@ -12,7 +12,7 @@ import { useSession } from "@/src/lib/session";
 import Link from "next/link";
 import { IoTicket } from "react-icons/io5";
 import { SiDiscord } from "react-icons/si";
-import { Sidebar } from "../components/navbar";
+import { FoundrySidebar } from "../components/navbar";
 
 export default function App() {
   const session = useSession();
@@ -61,7 +61,7 @@ export default function App() {
   // Authenticated Route
   return (
     <>
-      <Sidebar session={session} />
+      <FoundrySidebar session={session} />
     </>
   )
 }

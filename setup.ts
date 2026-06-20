@@ -1,5 +1,5 @@
 import { randomBytes } from "crypto";
-import { $, color, SQL, write } from "bun";
+import { $, write } from "bun";
 import colors from "picocolors"
 import { intro, note, outro, password, select, text } from '@clack/prompts';
 import { Client } from "pg";

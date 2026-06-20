@@ -14,6 +14,7 @@ export async function createToken(userInformation: {
     displayName: string | null;
     email: string | null;
     avatar: string | null;
+    balance: number | undefined;
 }) {
     const token = Iron.seal(userInformation, process.env.TOKEN_SECRET, Iron.defaults);
     return token;

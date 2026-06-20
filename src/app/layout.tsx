@@ -5,6 +5,7 @@ import { SessionProvider } from "../lib/session";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -23,11 +24,12 @@ export default async function RootLayout({
   return (
     <html lang="en" className={cn("font-['Akt']", "h-full", "antialiased", "font-sans", inter.variable)}>
         <body className="min-h-full flex flex-col">
-          <TooltipProvider>
-            <SessionProvider session={session}>
-              {children}
-            </SessionProvider>
-          </TooltipProvider>
+          <SessionProvider session={session}>
+              <TooltipProvider>
+                {/* <SidebarTrigger /> */}
+                {children}
+              </TooltipProvider>
+          </SessionProvider>
         </body>
     </html>
   );

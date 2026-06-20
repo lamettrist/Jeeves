@@ -19,7 +19,7 @@ export const users = pgTable("users", {
 	displayName: varchar({length: 32}),
     email: varchar({length: 256}),
 	avatar: varchar({length: 512}),
-	balance: doublePrecision().default(0.00),
+	balance: doublePrecision().default(100.00),
 	// title: varchar({ length: 256 }),
 	// estimate: varchar({ length: 256 }),
 	// embedding: vector({ dimensions: 3 }),
