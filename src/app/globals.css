@@ -167,3 +167,8 @@
         cursor: pointer;
     }
 }
+
+
+@view-transition {
+  navigation: auto;
+}

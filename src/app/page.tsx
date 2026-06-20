@@ -5,7 +5,7 @@ import { VideoAscii } from "react-video-ascii";
 import { GoLinkExternal } from "react-icons/go";
 import { redirect } from "next/navigation";
 import { Navbar } from "./components/navbar";
-import { Show } from "@clerk/nextjs";
+import { Show } from "../lib/auth";
 
 const delay = {
   duration: 0.8,
